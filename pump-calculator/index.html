@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privacy policy for the Pump Calculator Android app by AK2DSTUDIOS.">
+<title>Pump Calculator Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  html, body { margin: 0; }
+  :root {
+    --ground: #eef1f4;
+    --surface: #ffffff;
+    --ink: #18232e;
+    --muted: #566673;
+    --faint: #7c8b97;
+    --border: #d5dde3;
+    --border-strong: #c2ccd4;
+    --accent: #0e7490;
+    --accent-ink: #0b5566;
+    --accent-wash: #e2f0f3;
+    --callout: #f3f7f8;
+    --shadow: 0 1px 2px rgba(24, 35, 46, .04), 0 8px 28px rgba(24, 35, 46, .06);
+    --sans: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    --display: "Archivo", var(--sans);
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0d151d;
+      --surface: #131f29;
+      --ink: #e6edf2;
+      --muted: #9fb0bc;
+      --faint: #758592;
+      --border: #263540;
+      --border-strong: #33454f;
+      --accent: #3bb4cf;
+      --accent-ink: #7fd3e5;
+      --accent-wash: #12303a;
+      --callout: #16232d;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 30px rgba(0, 0, 0, .28);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0d151d;
+    --surface: #131f29;
+    --ink: #e6edf2;
+    --muted: #9fb0bc;
+    --faint: #758592;
+    --border: #263540;
+    --border-strong: #33454f;
+    --accent: #3bb4cf;
+    --accent-ink: #7fd3e5;
+    --accent-wash: #12303a;
+    --callout: #16232d;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 30px rgba(0, 0, 0, .28);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 16px;
+    padding-block: clamp(28px, 6vw, 64px);
+  }
+  .sheet {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .sheet-inner { padding: clamp(24px, 5vw, 56px); }
+
+  /* Header */
+  header { border-bottom: 1px solid var(--border); }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(30px, 6vw, 44px);
+    line-height: 1.04;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+    margin: 0 0 8px;
+  }
+  .lede {
+    color: var(--muted);
+    font-size: clamp(16px, 2.4vw, 18px);
+    max-width: 58ch;
+    margin: 0;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    margin-top: 26px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+  }
+  .meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 9px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--ground);
+  }
+  .meta dt { color: var(--faint); letter-spacing: .08em; text-transform: uppercase; font-size: 10.5px; }
+  .meta dd { margin: 0; color: var(--ink); font-weight: 500; }
+
+  /* Sections */
+  main { margin-top: 8px; }
+  section { padding-top: 34px; }
+  section + section { border-top: 1px solid var(--border); margin-top: 34px; }
+  h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(19px, 3vw, 23px);
+    letter-spacing: -.01em;
+    line-height: 1.2;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  h2 .num {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    flex: none;
+    padding-top: 2px;
+  }
+  h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .01em;
+    margin: 22px 0 8px;
+  }
+  p { margin: 0 0 14px; max-width: 66ch; }
+  a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+  strong { font-weight: 600; }
+
+  ul { margin: 0 0 14px; padding-left: 0; list-style: none; max-width: 66ch; }
+  ul li { position: relative; padding-left: 22px; margin-bottom: 9px; }
+  ul li::before {
+    content: "";
+    position: absolute;
+    left: 3px; top: 11px;
+    width: 5px; height: 5px;
+    background: var(--accent);
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  /* Callout / data table */
+  .callout {
+    background: var(--callout);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin: 6px 0 18px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout .k {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+
+  .table-wrap { overflow-x: auto; margin: 4px 0 16px; }
+  table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 14.5px; }
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-bottom: 10px;
+  }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  thead th {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 11.5px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border-strong);
+  }
+  tbody th { font-weight: 600; color: var(--ink); white-space: nowrap; }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: none; }
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    background: var(--accent-wash);
+    color: var(--accent-ink);
+    border: 1px solid var(--border);
+  }
+
+  .fill {
+    background: #fff3cd;
+    color: #664d03;
+    padding: 0 5px;
+    border-radius: 4px;
+    font-weight: 600;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  :root:not([data-theme="light"]) .fill { background: #4a3d10; color: #ffe08a; }
+  :root[data-theme="dark"] .fill { background: #4a3d10; color: #ffe08a; }
+
+  footer {
+    margin-top: 24px;
+    padding: 20px 4px 0;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--faint);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  @media (max-width: 480px) {
+    ul { max-width: none; }
+    p { max-width: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <article class="sheet">
+    <div class="sheet-inner">
+      <header>
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Pump Calculator</h1>
+        <p class="lede">How the Pump Calculator app handles data — what it collects, what it does not, and the choices you have. In short: the app itself asks for nothing about you; the only data leaving your device comes from the ads it shows.</p>
+        <dl class="meta">
+          <div><dt>Effective</dt><dd>22 September 2026</dd></div>
+          <div><dt>Developer</dt><dd>AK2DSTUDIOS</dd></div>
+          <div><dt>Platform</dt><dd>Android · Google Play</dd></div>
+          <div><dt>Package</dt><dd>com.AK2DSTUDIOS.pump_calculator</dd></div>
+        </dl>
+      </header>
+
+      <main>
+        <section>
+          <h2><span class="num">01</span>Overview</h2>
+          <p>Pump Calculator is a free engineering utility for computing pump and piping quantities — power, flow rate, torque, velocity head, temperature rise, fluid velocity, and Reynolds number. Every calculation runs entirely on your device.</p>
+          <p>The app does not require an account, a sign-in, or any registration. It does not ask you for your name, email address, phone number, or location, and it stores no personal profile. This policy explains the one exception to that: the third-party advertising the app displays.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">02</span>Information the app collects directly</h2>
+          <p><strong>None.</strong> The values you type into the calculators are used only to produce a result on screen. They are not transmitted, saved to any server, or shared with us or anyone else. We — the developer — receive no personal information from your use of the app.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">03</span>Advertising and third-party data</h2>
+          <p>Pump Calculator shows ads through <strong>Google AdMob</strong>, a Google advertising service. To serve and measure ads, the Google Mobile Ads SDK collects certain information automatically and shares it with Google. This is the only data that leaves your device.</p>
+
+          <div class="table-wrap">
+            <table>
+              <caption>Data handled by Google AdMob</caption>
+              <thead>
+                <tr><th scope="col">Data type</th><th scope="col">Collected</th><th scope="col">Shared</th><th scope="col">Purpose</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Device or other identifiers <br><span class="tag">Advertising ID</span></th>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Advertising &amp; marketing, analytics, fraud prevention and security</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The advertising identifier and related device information are collected and processed by Google under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. For how Google uses data from apps that use its services, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>. This data is encrypted in transit.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">04</span>How this data is used</h2>
+          <p>The information collected through AdMob supports:</p>
+          <ul>
+            <li><strong>Advertising and marketing</strong> — selecting, delivering, and measuring the ads shown in the app.</li>
+            <li><strong>Analytics</strong> — understanding ad performance and reach.</li>
+            <li><strong>Fraud prevention, security, and compliance</strong> — detecting invalid activity and keeping the ad network secure.</li>
+          </ul>
+          <p>We do not sell your personal information, and the app performs no advertising, profiling, or tracking of its own beyond what the Google Mobile Ads SDK does as described above.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">05</span>Your choices and controls</h2>
+          <p>You control the advertising identifier from your device settings:</p>
+          <ul>
+            <li><strong>Reset your advertising ID</strong> — Settings › Privacy › Ads › <em>Reset advertising ID</em>. This assigns a new identifier not linked to the previous one.</li>
+            <li><strong>Opt out of ad personalization</strong> — Settings › Privacy › Ads › <em>Delete advertising ID</em> (or <em>Opt out of Ads Personalization</em>). Ads may still appear but will not be personalized.</li>
+          </ul>
+          <p>The exact menu names vary by Android version and manufacturer. You can also review Google's ad settings at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">06</span>Data retention and deletion</h2>
+          <p>Because the app keeps no account and stores nothing about you on any server, there is no personal profile for us to retain or delete. Data collected by Google through AdMob is retained and deleted according to Google's own policies; you can manage or reset the advertising identifier at any time using the controls in Section 05. To request deletion of data Google holds, use <a href="https://myactivity.google.com" target="_blank" rel="noopener">Google's account and activity controls</a>.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">07</span>Children's privacy</h2>
+          <p>Pump Calculator is a professional and educational tool intended for a general and technical audience. It is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided information through the app's advertising, please contact us so it can be addressed.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">08</span>Security</h2>
+          <p>All data transmitted by the Google Mobile Ads SDK is encrypted in transit using industry-standard protocols. As the app holds no personal data of its own, there is no stored personal information that could be exposed by the app itself.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">09</span>Changes to this policy</h2>
+          <p>We may update this policy to reflect changes to the app or to legal requirements. When we do, we will revise the "Effective" date above and post the updated policy at this address. Continued use of the app after an update means you accept the revised policy.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">10</span>Contact</h2>
+          <p>If you have questions about this policy or how your data is handled, contact the developer at <a href="mailto:ganand90@gmail.com">ganand90@gmail.com</a>.</p>
+        </section>
+      </main>
+
+      <footer>
+        <span>AK2DSTUDIOS · Pump Calculator</span>
+        <span>Last updated 22 Sep 2026</span>
+      </footer>
+    </div>
+  </article>
+</div>
+
+</body>
+</html>
